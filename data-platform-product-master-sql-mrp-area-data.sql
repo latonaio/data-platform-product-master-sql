@@ -21,7 +21,12 @@ CREATE TABLE `data_platform_product_master_mrp_area_data`
     `PlannedDeliveryDurationInDays`    int(3) DEFAULT NULL,
     `StorageLocation`                  varchar(4) DEFAULT NULL,
     `IsMarkedForDeletion`              tinyint(1) DEFAULT NULL,
+
     PRIMARY KEY (`Product`, `BusinessPartner`, `Plant`, `MRPArea`),
-    CONSTRAINT `DataPlatformProductMasterMRPAreaData_fk` FOREIGN KEY (`Product`, `BusinessPartner`, `Plant`) REFERENCES `data_platform_product_master_bp_plant_data` (`Product`, `BusinessPartner`, `Plant`)
+
+    CONSTRAINT `DataPlatformProductMasterMRPAreaData_fk` FOREIGN KEY (`Product`, `BusinessPartner`, `Plant`) REFERENCES `data_platform_product_master_bp_plant_data` (`Product`, `BusinessPartner`, `Plant`),
+    CONSTRAINT `DataPlatformProductMasterMRPAreaDataDfltStorageLocationExtProcmt_fk` FOREIGN KEY (`DfltStorageLocationExtProcmt`) REFERENCES `data_platform_plant_storage_location_data` (`StorageLocation`),
+    CONSTRAINT `DataPlatformProductMasterMRPAreaDataStorageLocation_fk` FOREIGN KEY (`StorageLocation`) REFERENCES `data_platform_plant_storage_location_data` (`StorageLocation`)
+
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

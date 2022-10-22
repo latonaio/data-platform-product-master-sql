@@ -10,7 +10,10 @@ CREATE TABLE `data_platform_product_master_accounting_data` -- 名称変更
     `MovingAveragePrice`    varchar(11) DEFAULT NULL,
     `PriceLastChangeDate`   varchar(80) DEFAULT NULL,
     `IsMarkedForDeletion`   tinyint(1) DEFAULT NULL,
+
     PRIMARY KEY (`Product`, `BusinessPartner`, `Plant`),
+
     CONSTRAINT `DataPlatformProductMasterAccountingData_fk` FOREIGN KEY (`Product`, `BusinessPartner`, `Plant`) REFERENCES `data_platform_product_master_bp_plant_data` (`Product`, `BusinessPartner`, `Plant`)
+
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

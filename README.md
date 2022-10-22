@@ -9,8 +9,10 @@ https://api.XXXXXXXX.com/api/OP_API_XXXXXXX_XXX/overview
 data-platform-product-master-sql には、sql の設定ファイルとして以下の sql ファイルが含まれています。
 
 * data-platform-product-master-sql-general-data.sql（データ連携基盤 品目マスタ - 基本データ）
+* data-platform-product-master-sql-general-pdf-data.sql（データ連携基盤 品目マスタ - 基本PDFデータ）
 * data-platform-product-master-sql-business-partner-data.sql（データ連携基盤 品目マスタ - ビジネスパートナデータ）
 * data-platform-product-master-sql-bp-plant-data.sql（データ連携基盤 品目マスタ - ビジネスパートナプラントデータ）
+* data-platform-product-master-sql-bp-plant-pdf-data.sql（データ連携基盤 品目マスタ - ビジネスパートナプラントPDFデータ）
 * data-platform-product-master-sql-storage-location-data.sql （データ連携基盤 品目マスタ - 保管場所データ）
 * data-platform-product-master-sql-sales-delivery-data.sql（データ連携基盤 品目マスタ - 販売出荷データ）
 * data-platform-product-master-sql-procurement-data.sql（データ連携基盤 品目マスタ - 購買データ）
@@ -19,8 +21,6 @@ data-platform-product-master-sql には、sql の設定ファイルとして以�
 * data-platform-product-master-sql-accounting-data.sql （データ連携基盤 品目マスタ - 会計データ）
 * data-platform-product-master-sql-product-description-data.sql（データ連携基盤 品目マスタ - 品目テキストデータ）
 * data-platform-product-master-sql-sales-tax-data.sql（データ連携基盤 品目マスタ - 販売税データ）
-* data-platform-product-master-sql-general-pdf-data.sql（データ連携基盤 品目マスタ - 基本PDFデータ）
-* data-platform-product-master-sql-bp-plant-pdf-data.sql（データ連携基盤 品目マスタ - ビジネスパートナプラントPDFデータ）
 
 ## MySQL のセットアップ / Kubernetes の設定 / SQL テーブルの作成方法
 MySQL のセットアップ / Kubernetes の設定 / 具体的な SQL テーブルの作成方法、については、[mysql-kube](https://github.com/latonaio/mysql-kube)を参照ください。
