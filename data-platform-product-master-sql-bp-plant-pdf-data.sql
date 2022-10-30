@@ -1,7 +1,7 @@
 CREATE TABLE `data_platform_product_master_bp_plant_pdf_data` -- 新規追加
 (
   `Product`                        varchar(40) NOT NULL,      -- 新規追加
-  `BusinessPartner`                int(10) NOT NULL,          -- 新規追加
+  `BusinessPartner`                int(12) NOT NULL,          -- 新規追加
   `Plant`                          varchar(4) NOT NULL,       -- 新規追加
   `DocType`                        varchar(20) NOT NULL,      -- 新規追加
   `DocVersionID`                   int(4) NOT NULL,           -- 新規追加

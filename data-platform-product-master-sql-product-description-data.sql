@@ -2,7 +2,7 @@ CREATE TABLE `data_platform_product_master_product_description_data`
 (
     `Product`               varchar(40) NOT NULL,
     `Language`              varchar(2) NOT NULL,
-    `ProductDescription`    varchar(40) DEFAULT NULL,
+    `ProductDescription`    varchar(200) DEFAULT NULL,
 
     PRIMARY KEY (`Product`, `Language`),
 

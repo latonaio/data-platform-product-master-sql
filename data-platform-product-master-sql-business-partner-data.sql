@@ -1,11 +1,11 @@
-CREATE TABLE `data_platform_product_master_business_partner_data`  -- 新規追加
+CREATE TABLE `data_platform_product_master_business_partner_data`
 (
-    `Product`                 varchar(40) NOT NULL,      -- 新規追加
-    `BusinessPartner`         int(12) NOT NULL,          -- 新規追加
-    `ValidityEndDate`         date NOT NULL,             -- 新規追加
-    `ValidityStartDate`       date DEFAULT NULL,         -- 新規追加
-    `BusinessPartnerProduct`  varchar(40) DEFAULT NULL,  -- 新規追加
-    `IsMarkedForDeletion`     tinyint(1) DEFAULT NULL,   -- 新規追加
+    `Product`                 varchar(40) NOT NULL,
+    `BusinessPartner`         int(12) NOT NULL,
+    `ValidityEndDate`         date NOT NULL,
+    `ValidityStartDate`       date DEFAULT NULL,
+    `BusinessPartnerProduct`  varchar(40) DEFAULT NULL,
+    `IsMarkedForDeletion`     tinyint(1) DEFAULT NULL,
 
     PRIMARY KEY (`Product`, `BusinessPartner`, `ValidityEndDate`),
 

@@ -1,10 +1,10 @@
-CREATE TABLE `data_platform_product_master_general_pdf_data`      -- 新規追加
+CREATE TABLE `data_platform_product_master_general_pdf_data`
 (
-  `Product`                        varchar(40) NOT NULL,          -- 新規追加
-  `DocType`                        varchar(20) NOT NULL,          -- 新規追加
-  `DocVersionID`                   int(4) NOT NULL,               -- 新規追加
-  `DocID`                          varchar(100) NOT NULL,         -- 新規追加
-  `FileName`                       varchar(200) DEFAULT NULL,     -- 新規追加
+  `Product`                        varchar(40) NOT NULL,
+  `DocType`                        varchar(20) NOT NULL,
+  `DocVersionID`                   int(4) NOT NULL,
+  `DocID`                          varchar(100) NOT NULL,
+  `FileName`                       varchar(200) DEFAULT NULL,
 
     PRIMARY KEY (`Product`, `DocType`, `DocVersionID`, `DocID`),
 
