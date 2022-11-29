@@ -5,8 +5,8 @@ CREATE TABLE `data_platform_product_master_storage_location_data`
 	`Plant`                          varchar(4) NOT NULL,
 	`StorageLocation`                varchar(4) NOT NULL,
 	`CreationDate`                   date DEFAULT NULL,
+	`InventoryBlockStatus`           tinyint(1) DEFAULT NULL,
 	`IsMarkedForDeletion`            tinyint(1) DEFAULT NULL,
-	`InventoryBlockStockInd`         tinyint(1) DEFAULT NULL,
 
     PRIMARY KEY (`Product`, `BusinessPartner`, `Plant`, `StorageLocation`),
 

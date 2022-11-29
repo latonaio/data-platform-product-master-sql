@@ -11,7 +11,6 @@ CREATE TABLE `data_platform_product_master_bp_plant_data`
     `ReceivingStorageLocation`   varchar(4) DEFAULT NULL,
     `AvailabilityCheckType`      varchar(2) DEFAULT NULL,
     `ProfitCenter`               varchar(10) DEFAULT NULL,
-    `GoodsReceiptDuration`       int(3) DEFAULT NULL,
     `MRPType`                    varchar(2) DEFAULT NULL,
     `MRPResponsible`             varchar(3) DEFAULT NULL,
     `MinimumLotSizeQuantity`     varchar(13) DEFAULT NULL,

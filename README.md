@@ -12,6 +12,7 @@ data-platform-product-master-sql には、sql の設定ファイルとして以�
 * data-platform-product-master-sql-product-description-data.sql（データ連携基盤 品目マスタ - 品目テキストデータ）
 * data-platform-product-master-sql-general-pdf-data.sql（データ連携基盤 品目マスタ - 基本PDFデータ）
 * data-platform-product-master-sql-business-partner-data.sql（データ連携基盤 品目マスタ - ビジネスパートナデータ）
+* data-platform-product-master-sql-product-description-by-business-partner-data.sql（データ連携基盤 品目マスタ - ビジネスパートナ品目テキストデータ）
 * data-platform-product-master-sql-bp-plant-data.sql（データ連携基盤 品目マスタ - ビジネスパートナプラントデータ）
 * data-platform-product-master-sql-bp-plant-pdf-data.sql（データ連携基盤 品目マスタ - ビジネスパートナプラントPDFデータ）
 * data-platform-product-master-sql-storage-location-data.sql （データ連携基盤 品目マスタ - 保管場所データ）
