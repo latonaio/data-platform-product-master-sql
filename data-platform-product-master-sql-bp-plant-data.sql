@@ -12,7 +12,7 @@ CREATE TABLE `data_platform_product_master_bp_plant_data`
     `AvailabilityCheckType`      varchar(2) DEFAULT NULL,
     `ProfitCenter`               varchar(10) DEFAULT NULL,
     `MRPType`                    varchar(2) DEFAULT NULL,
-    `MRPResponsible`             varchar(3) DEFAULT NULL,
+    `MRPController`             varchar(3) DEFAULT NULL,
     `MinimumLotSizeQuantity`     varchar(13) DEFAULT NULL,
     `MaximumLotSizeQuantity`     varchar(13) DEFAULT NULL,
     `FixedLotSizeQuantity`       varchar(13) DEFAULT NULL,
