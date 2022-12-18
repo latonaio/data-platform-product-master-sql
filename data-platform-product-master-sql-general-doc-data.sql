@@ -2,12 +2,12 @@ CREATE TABLE `data_platform_product_master_general_doc_data`
 (
   `Product`                        varchar(40) NOT NULL,
   `DocType`                        varchar(20) NOT NULL,
-  `FileExtension`                  varchar(3) DEFAULT NULL,
   `DocVersionID`                   int(4) NOT NULL,
   `DocID`                          varchar(100) NOT NULL,
-  `DocIssuerBusinessPartner`       int(12) DEFAULT NULL,
-  `FilePath`                       varchar(1000) DEFAULT NULL,
+  `FileExtension`                  varchar(3) NOT NULL,
   `FileName`                       varchar(200) DEFAULT NULL,
+  `FilePath`                       varchar(1000) DEFAULT NULL,
+  `DocIssuerBusinessPartner`       int(12) DEFAULT NULL,
 
     PRIMARY KEY (`Product`, `DocType`, `DocVersionID`, `DocID`),
 
