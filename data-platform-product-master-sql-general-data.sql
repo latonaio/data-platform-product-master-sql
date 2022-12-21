@@ -15,6 +15,7 @@ CREATE TABLE `data_platform_product_master_general_data`
     `LastChangeDate`                date DEFAULT NULL,
     `NetWeight`                     float(15) DEFAULT NULL,
     `CountryOfOrigin`               varchar(3) DEFAULT NULL,
+    `CountryOfOriginLanguage`       varchar(2) DEFAULT NULL,
     `ItemCategory`                  varchar(4) DEFAULT NULL,
     `ProductAccountAssignmentGroup` varchar(2) DEFAULT NULL,
     `IsMarkedForDeletion`           tinyint(1) DEFAULT NULL,
@@ -27,6 +28,7 @@ CREATE TABLE `data_platform_product_master_general_data`
     CONSTRAINT `DataPlatformProductMasterGeneralDataDivision_fk` FOREIGN KEY (`Division`) REFERENCES `data_platform_division_division_data` (`Division`),
     CONSTRAINT `DataPlatformProductMasterGeneralDataWeightUnit_fk` FOREIGN KEY (`WeightUnit`) REFERENCES `data_platform_quantity_unit_quantity_unit_data` (`QuantityUnit`),
     CONSTRAINT `DataPlatformProductMasterGeneralDataCountryOfOrigin_fk` FOREIGN KEY (`CountryOfOrigin`) REFERENCES `data_platform_country_country_data` (`Country`)
+    CONSTRAINT `DataPlatformProductMasterGeneralDataCountryOfOriginLanguage_fk` FOREIGN KEY (`CountryOfOriginLanguage`) REFERENCES `data_platform_language_language_data` (`Language`)
 
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
