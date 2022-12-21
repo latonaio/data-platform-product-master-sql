@@ -6,7 +6,7 @@ CREATE TABLE `data_platform_product_master_bp_plant_doc_data`
   `DocType`                        varchar(20) NOT NULL,
   `DocVersionID`                   int(4) NOT NULL,
   `DocID`                          varchar(100) NOT NULL,
-  `FileExtension`                  varchar(3) NOT NULL,
+  `FileExtension`                  varchar(20) NOT NULL,
   `FileName`                       varchar(200) DEFAULT NULL,
   `FilePath`                       varchar(1000) DEFAULT NULL,
   `DocIssuerBusinessPartner`       int(12) DEFAULT NULL,
