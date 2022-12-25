@@ -4,7 +4,6 @@ CREATE TABLE `data_platform_product_master_bp_plant_data`
     `BusinessPartner`                           int(12) NOT NULL,
     `Plant`                                     varchar(4) NOT NULL,
     `AvailabilityCheckType`                     varchar(2) NOT NULL,
-    `ProfitCenter`                              varchar(10) DEFAULT NULL,
     `MRPType`                                   varchar(2) NOT NULL,
     `MRPController`                             varchar(3) NOT NULL,
     `ReorderThresholdQuantity`                  float(15) DEFAULT NULL,
@@ -24,6 +23,7 @@ CREATE TABLE `data_platform_product_master_bp_plant_data`
     `IsBatchManagementRequired`                 tinyint(1) DEFAULT NULL,
     `BatchManagementPolicy`                     varchar(4) DEFAULT NULL,
     `InventoryUnit`                             varchar(3) DEFAULT NULL,
+    `ProfitCenter`                              varchar(10) DEFAULT NULL,
     `IsMarkedForDeletion`                       tinyint(1) DEFAULT NULL,
 
     PRIMARY KEY (`Product`, `BusinessPartner`, `Plant`),
