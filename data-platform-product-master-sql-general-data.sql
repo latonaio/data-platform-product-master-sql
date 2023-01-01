@@ -11,7 +11,6 @@ CREATE TABLE `data_platform_product_master_general_data`
     `SizeOrDimensionText`           varchar(100) DEFAULT NULL,
 	`IndustryStandardName`          varchar(18) DEFAULT NULL,
     `ProductStandardID`             varchar(18) DEFAULT NULL,
-    `BarcodeType`                   varchar(20) DEFAULT NULL,
     `CountryOfOrigin`               varchar(3) DEFAULT NULL,
     `CountryOfOriginLanguage`       varchar(2) DEFAULT NULL,
     `ItemCategory`                  varchar(4) DEFAULT NULL,
