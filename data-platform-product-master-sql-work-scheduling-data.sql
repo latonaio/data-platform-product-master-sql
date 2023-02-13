@@ -8,7 +8,7 @@ CREATE TABLE `data_platform_product_master_work_scheduling_data`
     `ProductionSupervisor`          varchar(3) DEFAULT NULL,
     `ProductProductionQuantityUnit` varchar(3) DEFAULT NULL,
     `ProdnOrderIsBatchRequired`     tinyint(1) DEFAULT NULL,
-    `MatlCompIsMarkedForBackflush`  tinyint(1) DEFAULT NULL,
+    `PDTCompIsMarkedForBackflush`   tinyint(1) DEFAULT NULL,
     `ProductionSchedulingProfile`   varchar(6) DEFAULT NULL,
     `IsMarkedForDeletion`           tinyint(1) DEFAULT NULL,
 

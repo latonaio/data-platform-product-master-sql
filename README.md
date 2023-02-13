@@ -20,6 +20,10 @@ data-platform-product-master-sql には、sql の設定ファイルとして以�
 * data-platform-product-master-sql-work-scheduling-data.sql（データ連携基盤 品目マスタ - 作業計画データ）
 * data-platform-product-master-sql-tax-data.sql（データ連携基盤 品目マスタ - 税データ）
 * data-platform-product-master-sql-accounting-data.sql （データ連携基盤 品目マスタ - 会計データ）
+* data-platform-product-master-sql-allergen-data.sql（データ連携基盤 品目マスタ - アレルゲンデータ）
+* data-platform-product-master-sql-nutritional-info-data.sql（データ連携基盤 品目マスタ - 栄養成分データ）
+* data-platform-product-master-sql-calories-data.sql（データ連携基盤 品目マスタ - 熱量データ）
+
 
 ## MySQL のセットアップ / Kubernetes の設定 / SQL テーブルの作成方法
 MySQL のセットアップ / Kubernetes の設定 / 具体的な SQL テーブルの作成方法、については、[mysql-kube](https://github.com/latonaio/mysql-kube)を参照ください。

@@ -1,7 +1,6 @@
 CREATE TABLE `data_platform_product_master_tax_data`
 (
     `Product`                        varchar(40) NOT NULL,
---  `BusinessPartner`                int(12) NOT NULL,      -- 項目削除
     `Country`                        varchar(3) NOT NULL,
     `ProductTaxCategory`             varchar(4) NOT NULL,
     `ProductTaxClassification`       varchar(1) DEFAULT NULL,
