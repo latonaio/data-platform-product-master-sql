@@ -16,6 +16,7 @@ data-platform-product-master-sql には、sql の設定ファイルとして以�
 * data-platform-product-master-sql-bp-plant-data.sql（データ連携基盤 品目マスタ - ビジネスパートナプラントデータ）
 * data-platform-product-master-sql-bp-plant-doc-data.sql（データ連携基盤 品目マスタ - ビジネスパートナプラント文書データ）
 * data-platform-product-master-sql-storage-location-data.sql （データ連携基盤 品目マスタ - 保管場所データ）
+* data-platform-product-master-sql-storage-bin-data.sql（データ連携基盤 品目マスタ - 棚番データ）
 * data-platform-product-master-sql-mrp-area-data.sql（データ連携基盤 品目マスタ - MRPエリアデータ）
 * data-platform-product-master-sql-work-scheduling-data.sql（データ連携基盤 品目マスタ - 作業計画データ）
 * data-platform-product-master-sql-quality-data.sql（データ連携基盤 品目マスタ - 品質データ）

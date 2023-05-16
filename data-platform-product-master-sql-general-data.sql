@@ -16,6 +16,8 @@ CREATE TABLE `data_platform_product_master_general_data`
     `ItemCategory`                  varchar(4) DEFAULT NULL,
     `CountryOfOrigin`               varchar(3) DEFAULT NULL,
     `CountryOfOriginLanguage`       varchar(2) DEFAULT NULL,
+    `LocalRegionOfOrigin`           varchar(3) DEFAULT NULL,
+    `LocalSubRegionOfOrigin`        varchar(3) DEFAULT NULL,
     `BarcodeType`                   varchar(20) DEFAULT NULL,
     `ProductAccountAssignmentGroup` varchar(2) DEFAULT NULL,
     `CreationDate`                  date DEFAULT NULL,
@@ -31,6 +33,8 @@ CREATE TABLE `data_platform_product_master_general_data`
     CONSTRAINT `DataPlatformProductMasterGeneralDataInternalCapacityQuantityUnit_fk` FOREIGN KEY (`InternalCapacityQuantityUnit`) REFERENCES `data_platform_quantity_unit_quantity_unit_data` (`QuantityUnit`),
     CONSTRAINT `DataPlatformProductMasterGeneralDataCountryOfOrigin_fk` FOREIGN KEY (`CountryOfOrigin`) REFERENCES `data_platform_country_country_data` (`Country`)
     CONSTRAINT `DataPlatformProductMasterGeneralDataCountryOfOriginLanguage_fk` FOREIGN KEY (`CountryOfOriginLanguage`) REFERENCES `data_platform_language_language_data` (`Language`)
+    CONSTRAINT `DataPlatformProductMasterGeneralDataLocalRegionOfOrigin_fk` FOREIGN KEY (`LocalRegionOfOrigin`, `CountryOfOrigin`) REFERENCES `data_platform_local_region_local_region_data` (`LocalRegion`, `Country`)
+    CONSTRAINT `DataPlatformProductMasterGeneralDataLocalSubRegionOfOrigin_fk` FOREIGN KEY (`LocalSubRegionOfOrigin`, `LocalRegionOfOrigin`, `CountryOfOrigin`) REFERENCES `data_platform_local_region_local_sub_region_data` (`LocalSubRegion`, `LocalRegion`, `Country`)
 
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
