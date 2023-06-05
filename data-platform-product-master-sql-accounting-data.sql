@@ -5,7 +5,7 @@ CREATE TABLE `data_platform_product_master_accounting_data`
     `Plant`                 varchar(4) NOT NULL,
     `ValuationClass`        varchar(4) DEFAULT NULL,
     `CostingPolicy`         varchar(1) DEFAULT NULL,
-    `PriceUnitQty`          varchar(5) DEFAULT NULL,
+    `PriceUnitQty`          int(6) DEFAULT NULL,
     `StandardPrice`         float(13) DEFAULT NULL,
     `MovingAveragePrice`    float(13) DEFAULT NULL,
     `PriceLastChangeDate`   date DEFAULT NULL,
