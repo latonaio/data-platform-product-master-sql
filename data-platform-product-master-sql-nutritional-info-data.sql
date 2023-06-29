@@ -5,6 +5,9 @@ CREATE TABLE `data_platform_product_master_nutritional_info_data`
     `Nutrient`                varchar(5) NOT NULL,
     `NutrientContent`         float(10) DEFAULT NULL,
     `NutrientContentUnit`     varchar(3) DEFAULT NULL,
+    `CreationDate`            date NOT NULL,
+    `LastChangeDate`          date NOT NULL,
+    `IsMarkedForDeletion`     tinyint(1) DEFAULT NULL,
 
     PRIMARY KEY (`Product`, `BusinessPartener`, `Nutrient`),
 

@@ -1,9 +1,11 @@
 CREATE TABLE `data_platform_product_master_general_data`
 (
     `Product`                       varchar(40) NOT NULL,
-    `ProductType`                   varchar(4) DEFAULT NULL,
-    `BaseUnit`                      varchar(3) DEFAULT NULL,
-    `ValidityStartDate`             date DEFAULT NULL,
+    `ProductType`                   varchar(4) NOT NULL,
+    `BaseUnit`                      varchar(3) NOT NULL,
+    `ValidityStartDate`             date NOT NULL,
+    `ValidityEndDate`               date NOT NULL,
+    `ItemCategory`                  varchar(4) NOT NULL,
     `ProductGroup`                  varchar(9) DEFAULT NULL,
     `GrossWeight`                   float(15) DEFAULT NULL,
     `NetWeight`                     float(15) DEFAULT NULL,
@@ -13,15 +15,14 @@ CREATE TABLE `data_platform_product_master_general_data`
     `SizeOrDimensionText`           varchar(100) DEFAULT NULL,
     `ProductStandardID`             varchar(18) DEFAULT NULL,
 	`IndustryStandardName`          varchar(18) DEFAULT NULL,
-    `ItemCategory`                  varchar(4) DEFAULT NULL,
     `CountryOfOrigin`               varchar(3) DEFAULT NULL,
     `CountryOfOriginLanguage`       varchar(2) DEFAULT NULL,
     `LocalRegionOfOrigin`           varchar(3) DEFAULT NULL,
     `LocalSubRegionOfOrigin`        varchar(3) DEFAULT NULL,
     `BarcodeType`                   varchar(20) DEFAULT NULL,
     `ProductAccountAssignmentGroup` varchar(2) DEFAULT NULL,
-    `CreationDate`                  date DEFAULT NULL,
-    `LastChangeDate`                date DEFAULT NULL,
+    `CreationDate`                  date NOT NULL,
+    `LastChangeDate`                date NOT NULL,
     `IsMarkedForDeletion`           tinyint(1) DEFAULT NULL,
 
     PRIMARY KEY (`Product`)

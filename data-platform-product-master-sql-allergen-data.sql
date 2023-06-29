@@ -4,6 +4,8 @@ CREATE TABLE `data_platform_product_master_allergen_data`
     `BusinessPartner`           int(12) NOT NULL,
     `Allergen`                  varchar(60) NOT NULL,
     `AllergenIsContained`       tinyint(1) DEFAULT NULL,
+    `CreationDate`              date NOT NULL,
+    `LastChangeDate`            date NOT NULL,
     `IsMarkedForDeletion`       tinyint(1) DEFAULT NULL,
 
     PRIMARY KEY (`Product`, `BusinessPartner`, `Allergen`),

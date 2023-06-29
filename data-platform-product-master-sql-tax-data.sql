@@ -3,7 +3,10 @@ CREATE TABLE `data_platform_product_master_tax_data`
     `Product`                        varchar(40) NOT NULL,
     `Country`                        varchar(3) NOT NULL,
     `ProductTaxCategory`             varchar(4) NOT NULL,
-    `ProductTaxClassification`       varchar(1) DEFAULT NULL,
+    `ProductTaxClassification`       varchar(1) NOT NULL,
+    `CreationDate`                   date NOT NULL,
+    `LastChangeDate`                 date NOT NULL,
+    `IsMarkedForDeletion`            tinyint(1) DEFAULT NULL,
 
     PRIMARY KEY (`Product`, `Country`, `ProductTaxCategory`),
 

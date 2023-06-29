@@ -5,8 +5,9 @@ CREATE TABLE `data_platform_product_master_storage_bin_data`
 	`Plant`                          varchar(4) NOT NULL,
 	`StorageLocation`                varchar(4) NOT NULL,
 	`StorageBin`                     varchar(10) NOT NULL,
-	`CreationDate`                   date DEFAULT NULL,
 	`BlockStatus`                    tinyint(1) DEFAULT NULL,
+    `CreationDate`                   date NOT NULL,
+    `LastChangeDate`                 date NOT NULL,
 	`IsMarkedForDeletion`            tinyint(1) DEFAULT NULL,
 
     PRIMARY KEY (`Product`, `BusinessPartner`, `Plant`, `StorageLocation`, `StorageBin`),
