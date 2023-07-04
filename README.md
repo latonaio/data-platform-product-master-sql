@@ -9,10 +9,10 @@ https://api.XXXXXXXX.com/api/OP_API_XXXXXXX_XXX/overview
 data-platform-product-master-sql には、sql の設定ファイルとして以下の sql ファイルが含まれています。
 
 * data-platform-product-master-sql-general-data.sql（データ連携基盤 品目マスタ - 基本データ）
-* data-platform-product-master-sql-product-description-data.sql（データ連携基盤 品目マスタ - 品目テキストデータ）
+* data-platform-product-master-sql-product-description-data.sql（データ連携基盤 品目マスタ - 品目説明データ）
 * data-platform-product-master-sql-general-doc-data.sql（データ連携基盤 品目マスタ - 基本文書データ）
 * data-platform-product-master-sql-business-partner-data.sql（データ連携基盤 品目マスタ - ビジネスパートナデータ）
-* data-platform-product-master-sql-product-description-by-business-partner-data.sql（データ連携基盤 品目マスタ - ビジネスパートナ品目テキストデータ）
+* data-platform-product-master-sql-product-desc-by-bp-data.sql（データ連携基盤 品目マスタ - ビジネスパートナ品目説明データ）
 * data-platform-product-master-sql-bp-plant-data.sql（データ連携基盤 品目マスタ - ビジネスパートナプラントデータ）
 * data-platform-product-master-sql-bp-plant-doc-data.sql（データ連携基盤 品目マスタ - ビジネスパートナプラント文書データ）
 * data-platform-product-master-sql-storage-location-data.sql （データ連携基盤 品目マスタ - 保管場所データ）
