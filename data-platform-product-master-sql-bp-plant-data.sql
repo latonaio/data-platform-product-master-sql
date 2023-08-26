@@ -31,10 +31,10 @@ CREATE TABLE `data_platform_product_master_bp_plant_data`
 
     PRIMARY KEY (`Product`, `BusinessPartner`, `Plant`),
 
-    CONSTRAINT `DataPlatformProductMasterBPPlantDataProduct_fk` FOREIGN KEY (`Product`) REFERENCES `data_platform_product_master_general_data` (`Product`),
-    CONSTRAINT `DataPlatformProductMasterBPPlantDataPlant_fk` FOREIGN KEY (`BusinessPartner`, `Plant`) REFERENCES `data_platform_plant_general_data` (`BusinessPartner`, `Plant`),
-    CONSTRAINT `DataPlatformProductMasterBPPlantDataSafetyDurationUnit_fk` FOREIGN KEY (`SafetyDurationUnit`) REFERENCES `data_platform_quantity_unit_quantity_unit_data` (`QuantityUnit`),
-    CONSTRAINT `DataPlatformProductMasterBPPlantDataStandardDeliveryDurationUnit_fk` FOREIGN KEY (`StandardDeliveryDurationUnit`) REFERENCES `data_platform_quantity_unit_quantity_unit_data` (`QuantityUnit`)
+    CONSTRAINT `DPFMProductMasterBPPlantDataProduct_fk` FOREIGN KEY (`Product`) REFERENCES `data_platform_product_master_general_data` (`Product`),
+    CONSTRAINT `DPFMProductMasterBPPlantDataPlant_fk` FOREIGN KEY (`BusinessPartner`, `Plant`) REFERENCES `data_platform_plant_general_data` (`BusinessPartner`, `Plant`),
+    CONSTRAINT `DPFMProductMasterBPPlantDataSafetyDurationUnit_fk` FOREIGN KEY (`SafetyDurationUnit`) REFERENCES `data_platform_quantity_unit_quantity_unit_data` (`QuantityUnit`),
+    CONSTRAINT `DPFMProductMasterBPPlantDataStandardDeliveryDurationUnit_fk` FOREIGN KEY (`StandardDeliveryDurationUnit`) REFERENCES `data_platform_quantity_unit_quantity_unit_data` (`QuantityUnit`)
 
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

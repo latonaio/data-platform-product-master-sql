@@ -10,8 +10,8 @@ CREATE TABLE `data_platform_product_master_allergen_data`
 
     PRIMARY KEY (`Product`, `BusinessPartner`, `Allergen`),
 
-    CONSTRAINT `DataPlatformProductMasterAllergenData_fk` FOREIGN KEY (`Product`, `BusinessPartner`) REFERENCES `data_platform_product_master_business_partner_data` (`Product`, `BusinessPartner`),
-    CONSTRAINT `DataPlatformProductMasterDataAllergen_fk` FOREIGN KEY (`Allergen`) REFERENCES `data_platform_allergen_allergen_data` (`Allergen`)
+    CONSTRAINT `DPFMProductMasterAllergenData_fk` FOREIGN KEY (`Product`, `BusinessPartner`) REFERENCES `data_platform_product_master_business_partner_data` (`Product`, `BusinessPartner`),
+    CONSTRAINT `DPFMProductMasterAllergenDataAllergen_fk` FOREIGN KEY (`Allergen`) REFERENCES `data_platform_allergen_allergen_data` (`Allergen`)
 
 
 ) ENGINE = InnoDB

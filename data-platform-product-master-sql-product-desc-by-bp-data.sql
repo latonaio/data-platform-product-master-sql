@@ -10,8 +10,8 @@ CREATE TABLE `data_platform_product_master_product_desc_by_bp_data`
 
     PRIMARY KEY (`Product`, `BusinessPartner`, `Language`),
 
-    CONSTRAINT `DataPlatformProductMasterProductDescByBPData_fk` FOREIGN KEY (`Product`, `BusinessPartner`) REFERENCES `data_platform_product_master_business_partner_data` (`Product`, `BusinessPartner`),
-    CONSTRAINT `DataPlatformProductMasterProductDescByBPDataLanguage_fk` FOREIGN KEY (`Product`, `Language`) REFERENCES `data_platform_product_master_product_description_data` (`Product`, `Language`)
+    CONSTRAINT `DPFMProductMasterProductDescByBPData_fk` FOREIGN KEY (`Product`, `BusinessPartner`) REFERENCES `data_platform_product_master_business_partner_data` (`Product`, `BusinessPartner`),
+    CONSTRAINT `DPFMProductMasterProductDescByBPDataLanguage_fk` FOREIGN KEY (`Product`, `Language`) REFERENCES `data_platform_product_master_product_description_data` (`Product`, `Language`)
 
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

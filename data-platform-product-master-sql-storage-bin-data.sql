@@ -12,8 +12,8 @@ CREATE TABLE `data_platform_product_master_storage_bin_data`
 
     PRIMARY KEY (`Product`, `BusinessPartner`, `Plant`, `StorageLocation`, `StorageBin`),
 
-    CONSTRAINT `DataPlatformProductMasterStorageBinData_fk` FOREIGN KEY (`Product`, `BusinessPartner`, `Plant`, `StorageLocation`) REFERENCES `data_platform_product_master_storage_location_data` (`Product`, `BusinessPartner`, `Plant`, `StorageLocation`),
-    CONSTRAINT `DataPlatformProductMasterStorageBinDataStorageBin_fk` FOREIGN KEY (`BusinessPartner`, `Plant`, `StorageLocation`, `StorageBin`) REFERENCES `data_platform_storage_bin_general_data` (`BusinessPartner`, `Plant`, `StorageLocation`, `StorageBin`)
+    CONSTRAINT `DPFMProductMasterStorageBinData_fk` FOREIGN KEY (`Product`, `BusinessPartner`, `Plant`, `StorageLocation`) REFERENCES `data_platform_product_master_storage_location_data` (`Product`, `BusinessPartner`, `Plant`, `StorageLocation`),
+    CONSTRAINT `DPFMProductMasterStorageBinDataStorageBin_fk` FOREIGN KEY (`BusinessPartner`, `Plant`, `StorageLocation`, `StorageBin`) REFERENCES `data_platform_storage_bin_general_data` (`BusinessPartner`, `Plant`, `StorageLocation`, `StorageBin`)
 
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

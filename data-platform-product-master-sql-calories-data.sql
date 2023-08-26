@@ -11,8 +11,8 @@ CREATE TABLE `data_platform_product_master_calories_data`
 
     PRIMARY KEY (`Product`, `BusinessPartner`),
 
-    CONSTRAINT `DataPlatformProductMasterCaloriesData_fk` FOREIGN KEY (`Product`, `BusinessPartner`) REFERENCES `data_platform_product_master_business_partner_data` (`Product`, `BusinessPartner`),
-    CONSTRAINT `DataPlatformProductMasterCaloriesDataNutrientCaloryUnit_fk` FOREIGN KEY (`CaloryUnit`) REFERENCES `data_platform_quantity_unit_quantity_unit_data` (`QuantityUnit`)
+    CONSTRAINT `DPFMProductMasterCaloriesData_fk` FOREIGN KEY (`Product`, `BusinessPartner`) REFERENCES `data_platform_product_master_business_partner_data` (`Product`, `BusinessPartner`),
+    CONSTRAINT `DPFMProductMasterCaloriesDataCaloryUnit_fk` FOREIGN KEY (`CaloryUnit`) REFERENCES `data_platform_quantity_unit_quantity_unit_data` (`QuantityUnit`)
 
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

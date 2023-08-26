@@ -30,8 +30,8 @@ CREATE TABLE `data_platform_product_master_mrp_area_data`
 
     PRIMARY KEY (`Product`, `BusinessPartner`, `Plant`, `MRPArea`),
 
-    CONSTRAINT `DataPlatformProductMasterMRPAreaData_fk` FOREIGN KEY (`Product`, `BusinessPartner`, `Plant`) REFERENCES `data_platform_product_master_bp_plant_data` (`Product`, `BusinessPartner`, `Plant`),
-    CONSTRAINT `DataPlatformProductMasterMRPAreaDataStorageLocationForMRP_fk` FOREIGN KEY (`BusinessPartner`, `Plant`, `StorageLocationForMRP`) REFERENCES `data_platform_plant_storage_location_data` (`BusinessPartner`, `Plant`, `StorageLocation`)
+    CONSTRAINT `DPFMProductMasterMRPAreaData_fk` FOREIGN KEY (`Product`, `BusinessPartner`, `Plant`) REFERENCES `data_platform_product_master_bp_plant_data` (`Product`, `BusinessPartner`, `Plant`),
+    CONSTRAINT `DPFMProductMasterMRPAreaDataStorageLocationForMRP_fk` FOREIGN KEY (`BusinessPartner`, `Plant`, `StorageLocationForMRP`) REFERENCES `data_platform_plant_storage_location_data` (`BusinessPartner`, `Plant`, `StorageLocation`)
 
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

@@ -14,7 +14,7 @@ CREATE TABLE `data_platform_product_master_accounting_data`
 
     PRIMARY KEY (`Product`, `BusinessPartner`, `Plant`),
 
-    CONSTRAINT `DataPlatformProductMasterAccountingData_fk` FOREIGN KEY (`Product`, `BusinessPartner`, `Plant`) REFERENCES `data_platform_product_master_bp_plant_data` (`Product`, `BusinessPartner`, `Plant`)
+    CONSTRAINT `DPFMProductMasterAccountingData_fk` FOREIGN KEY (`Product`, `BusinessPartner`, `Plant`) REFERENCES `data_platform_product_master_bp_plant_data` (`Product`, `BusinessPartner`, `Plant`)
 
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

@@ -11,8 +11,8 @@ CREATE TABLE `data_platform_product_master_business_partner_data`
 
     PRIMARY KEY (`Product`, `BusinessPartner`, `ValidityStartDate`, `ValidityEndDate`),
 
-    CONSTRAINT `DataPlatformProductMasterBusinessPartnerData_fk` FOREIGN KEY (`Product`) REFERENCES `data_platform_product_master_general_data` (`Product`),
-    CONSTRAINT `DataPlatformProductMasterBusinessPartnerDataBusinessPartner_fk` FOREIGN KEY (`BusinessPartner`) REFERENCES `data_platform_business_partner_general_data` (`BusinessPartner`)
+    CONSTRAINT `DPFMProductMasterBusinessPartnerData_fk` FOREIGN KEY (`Product`) REFERENCES `data_platform_product_master_general_data` (`Product`),
+    CONSTRAINT `DPFMProductMasterBusinessPartnerDataBusinessPartner_fk` FOREIGN KEY (`BusinessPartner`) REFERENCES `data_platform_business_partner_general_data` (`BusinessPartner`)
 
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

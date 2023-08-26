@@ -31,10 +31,10 @@ CREATE TABLE `data_platform_product_master_production_data`
 
     PRIMARY KEY (`Product`, `BusinessPartner`, `Plant`),
 
-    CONSTRAINT `DataPlatformProductMasterProductionData_fk` FOREIGN KEY (`Product`, `BusinessPartner`, `Plant`) REFERENCES `data_platform_product_master_bp_plant_data` (`Product`, `BusinessPartner`, `Plant`),
-    CONSTRAINT `DataPlatformProductMasterProductionDataProductionStorageLocation_fk` FOREIGN KEY (`BusinessPartner`, `Plant`, `ProductionStorageLocation`) REFERENCES `data_platform_plant_storage_location_data` (`BusinessPartner`, `Plant`, `StorageLocation`),
-    CONSTRAINT `DataPlatformProductMasterProductionDataProductProcessingDurationUnit_fk` FOREIGN KEY (`ProductProcessingDurationUnit`) REFERENCES `data_platform_quantity_unit_quantity_unit_data` (`QuantityUnit`),
-    CONSTRAINT `DataPlatformProductMasterProductionDataProductProductionQuantityUnit_fk` FOREIGN KEY (`ProductProductionQuantityUnit`) REFERENCES `data_platform_quantity_unit_quantity_unit_data` (`QuantityUnit`)
+    CONSTRAINT `DPFMProductMasterProductionData_fk` FOREIGN KEY (`Product`, `BusinessPartner`, `Plant`) REFERENCES `data_platform_product_master_bp_plant_data` (`Product`, `BusinessPartner`, `Plant`),
+    CONSTRAINT `DPFMProductMasterProductionDataProductionStorageLocation_fk` FOREIGN KEY (`BusinessPartner`, `Plant`, `ProductionStorageLocation`) REFERENCES `data_platform_plant_storage_location_data` (`BusinessPartner`, `Plant`, `StorageLocation`),
+    CONSTRAINT `DPFMProductMasterProductionDataProductProcessingDurationUnit_fk` FOREIGN KEY (`ProductProcessingDurationUnit`) REFERENCES `data_platform_quantity_unit_quantity_unit_data` (`QuantityUnit`),
+    CONSTRAINT `DPFMProductMasterProductionDataProductProductionQuantityUnit_fk` FOREIGN KEY (`ProductProductionQuantityUnit`) REFERENCES `data_platform_quantity_unit_quantity_unit_data` (`QuantityUnit`)
 
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

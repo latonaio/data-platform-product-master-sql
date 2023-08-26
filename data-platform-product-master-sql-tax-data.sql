@@ -10,8 +10,8 @@ CREATE TABLE `data_platform_product_master_tax_data`
 
     PRIMARY KEY (`Product`, `Country`, `ProductTaxCategory`),
 
-    CONSTRAINT `DataPlatformProductMasterTaxData_fk` FOREIGN KEY (`Product`) REFERENCES `data_platform_product_master_general_data` (`Product`),
-    CONSTRAINT `DataPlatformProductMasterTaxDataCountry_fk` FOREIGN KEY (`Country`) REFERENCES `data_platform_country_country_data` (`Country`)
+    CONSTRAINT `DPFMProductMasterTaxData_fk` FOREIGN KEY (`Product`) REFERENCES `data_platform_product_master_general_data` (`Product`),
+    CONSTRAINT `DPFMProductMasterTaxDataCountry_fk` FOREIGN KEY (`Country`) REFERENCES `data_platform_country_country_data` (`Country`)
 
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

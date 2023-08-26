@@ -11,9 +11,9 @@ CREATE TABLE `data_platform_product_master_general_doc_data`
 
     PRIMARY KEY (`Product`, `DocType`, `DocVersionID`, `DocID`),
 
-    CONSTRAINT `DataPlatformProductMasterGeneralDocData_fk` FOREIGN KEY (`Product`) REFERENCES `data_platform_product_master_general_data` (`Product`),
-    CONSTRAINT `DataPlatformProductMasterGeneralDocDataDocType_fk` FOREIGN KEY (`DocType`) REFERENCES `data_platform_doc_type_doc_type_data` (`DocType`),
-    CONSTRAINT `DataPlatformProductMasterGeneralDocDataDocIssuerBusinessPartner_fk` FOREIGN KEY (`DocIssuerBusinessPartner`) REFERENCES `data_platform_business_partner_general_data` (`BusinessPartner`)
+    CONSTRAINT `DPFMProductMasterGeneralDocData_fk` FOREIGN KEY (`Product`) REFERENCES `data_platform_product_master_general_data` (`Product`),
+    CONSTRAINT `DPFMProductMasterGeneralDocDataDocType_fk` FOREIGN KEY (`DocType`) REFERENCES `data_platform_doc_type_doc_type_data` (`DocType`),
+    CONSTRAINT `DPFMProductMasterGeneralDocDataDocIssuerBusinessPartner_fk` FOREIGN KEY (`DocIssuerBusinessPartner`) REFERENCES `data_platform_business_partner_general_data` (`BusinessPartner`)
 
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
