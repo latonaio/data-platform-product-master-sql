@@ -3,7 +3,7 @@ CREATE TABLE `data_platform_product_master_bp_plant_doc_data`
   `Product`                        varchar(40) NOT NULL,
   `BusinessPartner`                int(12) NOT NULL,
   `Plant`                          varchar(4) NOT NULL,
-  `DocType`                        varchar(20) NOT NULL,
+  `DocType`                        varchar(100) NOT NULL,
   `DocVersionID`                   int(4) NOT NULL,
   `DocID`                          varchar(100) NOT NULL,
   `FileExtension`                  varchar(20) NOT NULL,
