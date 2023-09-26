@@ -14,7 +14,7 @@ CREATE TABLE `data_platform_product_master_bp_plant_doc_data`
     PRIMARY KEY (`Product`, `BusinessPartner`, `Plant`, `DocType`, `DocVersionID`, `DocID`),
     
     CONSTRAINT `DPFMProductMasterBpPlantDocData_fk` FOREIGN KEY (`Product`, `BusinessPartner`, `Plant`) REFERENCES `data_platform_product_master_bp_plant_data` (`Product`, `BusinessPartner`, `Plant`),
-    CONSTRAINT `DPFMProductMasterBpPlantDocDataDocType_fk` FOREIGN KEY (`DocType`) REFERENCES `data_platform_doc_type_doc_type_data` (`DocType`)
+    CONSTRAINT `DPFMProductMasterBpPlantDocDataDocType_fk` FOREIGN KEY (`DocType`) REFERENCES `data_platform_doc_type_doc_type_data` (`DocType`),
     CONSTRAINT `DPFMProductMasterBpPlantDocDataDocIssuerBusinessPartner_fk` FOREIGN KEY (`DocIssuerBusinessPartner`) REFERENCES `data_platform_business_partner_general_data` (`BusinessPartner`)
     
 ) ENGINE = InnoDB
