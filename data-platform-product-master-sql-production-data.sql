@@ -4,9 +4,9 @@ CREATE TABLE `data_platform_product_master_production_data`
     `BusinessPartner`                                    int(12) NOT NULL,
     `Plant`                                              varchar(4) NOT NULL,
     `ProductionStorageLocation`                          varchar(4) NOT NULL,
-    `ProductProcessingDuration`                          float(13) NOT NULL,
-    `ProductProcessingDurationUnit`                      varchar(3) NOT NULL,
-    `ProductProductionQuantityUnit`                      varchar(3) NOT NULL,
+    `ProductionDuration`                                 float(13) NOT NULL,
+    `ProductionDurationUnit`                             varchar(3) NOT NULL,
+    `ProductionQuantityUnit`                             varchar(3) NOT NULL,
     `MinimumProductionQuantityInBaseUnit`                float(15) NOT NULL,
     `MinimumProductionLotSizeQuantityInBaseUnit`         float(15) NOT NULL,
     `StandardProductionQuantityInBaseUnit`               float(15) NOT NULL,
@@ -33,8 +33,8 @@ CREATE TABLE `data_platform_product_master_production_data`
 
     CONSTRAINT `DPFMProductMasterProductionData_fk` FOREIGN KEY (`Product`, `BusinessPartner`, `Plant`) REFERENCES `data_platform_product_master_bp_plant_data` (`Product`, `BusinessPartner`, `Plant`),
     CONSTRAINT `DPFMProductMasterProductionDataProductionStorageLocation_fk` FOREIGN KEY (`BusinessPartner`, `Plant`, `ProductionStorageLocation`) REFERENCES `data_platform_plant_storage_location_data` (`BusinessPartner`, `Plant`, `StorageLocation`),
-    CONSTRAINT `DPFMProductMasterProductionDataProductProcessingDurationUnit_fk` FOREIGN KEY (`ProductProcessingDurationUnit`) REFERENCES `data_platform_quantity_unit_quantity_unit_data` (`QuantityUnit`),
-    CONSTRAINT `DPFMProductMasterProductionDataProductProductionQuantityUnit_fk` FOREIGN KEY (`ProductProductionQuantityUnit`) REFERENCES `data_platform_quantity_unit_quantity_unit_data` (`QuantityUnit`)
+    CONSTRAINT `DPFMProductMasterProductionDataProductionDurationUnit_fk` FOREIGN KEY (`ProductionDurationUnit`) REFERENCES `data_platform_quantity_unit_quantity_unit_data` (`QuantityUnit`),
+    CONSTRAINT `DPFMProductMasterProductionDataProductionQuantityUnit_fk` FOREIGN KEY (`ProductionQuantityUnit`) REFERENCES `data_platform_quantity_unit_quantity_unit_data` (`QuantityUnit`)
 
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
