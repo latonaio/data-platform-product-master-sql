@@ -22,6 +22,8 @@ CREATE TABLE `data_platform_product_master_general_data`
     `LocalSubRegionOfOrigin`        varchar(3) DEFAULT NULL,
     `BarcodeType`                   varchar(20) DEFAULT NULL,
     `ProductAccountAssignmentGroup` varchar(2) DEFAULT NULL,
+    `CertificateAuthorityChain`     varchar(2000) DEFAULT NULL,
+    `UsageControlChain`             varchar(2000) DEFAULT NULL,
     `CreationDate`                  date NOT NULL,
     `LastChangeDate`                date NOT NULL,
     `IsMarkedForDeletion`           tinyint(1) DEFAULT NULL,
